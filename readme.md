@@ -17,10 +17,7 @@ without a plate. Some other modifications include per-key RGB lighting
 and underglow, support for I2C OLED display or (some) SPI displays, and
 [Cirque Trackpads](https://www.cirque.com/glidepoint-circle-trackpads)
 via an FPC connector/cable. If you have any suggestions, please open an
-issue/pull request, or email. There are M2 mounting points intended for
-an acrylic cover over the display area or to be used as a holder for
-the trackpad. I have not designed one, but would welcome somebody else
-to.
+issue/pull request, or email.
 
 ## Ordering
 The following instructions will be for [JLCPCB](https://jlcpcb.com),
@@ -31,8 +28,7 @@ can probably be used, although I have not verified this.
 1. Upload the Gerber files from [production/gerbers.zip](production/gerbers.zip)
 2. Set the following parameters: (and change other things like PCB
 quantity and colour as desired)
-- **Delivery Format**: Panel by Customer
-- **Column**: 2, **Row**: 1
+- **Different Design**: 2
 3. For PCB assembly, choose **Economic** PCBA type and **Top Side** for
 assembly side. If you would like the LEDs and related components to be
 installed by PCBA, choose **Standard** and **Both Sides**.
@@ -44,7 +40,11 @@ missing data". These are the display pin headers.
 6. Select appropriate components on the following screen by typing in
 the shown part number and select it. An effort has been made to choose
 as few extended components as possible, but this is not possible for
-some.
+some. Note, footprints D1 & D2 are power indication LEDs. They can be
+left unpopulated if you'd rather not have an LED that is always lit.
+If you would like them installed while not being blinded, try to find
+an LED with a lower forward current and voltage (supply is 5v),
+perhaps something in the realm of 2v and 1-5mA.
 7. Give a quick look at the component placement and make sure nothing
 looks wildly wrong. It is normal for some components to be shown
 oriented incorrectly or not quite where they belong. The PCB reviewers
@@ -57,12 +57,13 @@ For components that are not carried or commonly out of stock at JLCPCB:
 | Cirque Trackpad ([TM035035](https://www.mouser.com/ProductDetail/355-TM0350352024-003)) | 1 or 2 | Also available in 23mm & 40mm diameter |
 | FPC Connector ([FH33J-12S-0.5SH](https://www.mouser.com/ProductDetail/798-FH33J12S05SH10)) | 1 per trackpad | Quite doable by hand-soldering |
 | FPC Cable ([98266-0118](https://www.mouser.com/ProductDetail/Molex/98266-0118)) | 1 per trackpad | Change length as desired |
-| Nice!View Display ([LS011B7DH03](https://nicekeyboards.com/nice-view)) | 1 or 2 | Available at a lower price if comfortable hand-wiring [here](https://www.aliexpress.us/item/3256801622787441.html) | 
+| Nice!View Display ([LS011B7DH03](https://nicekeyboards.com/nice-view)) | 1 or 2 | Available at a lower price if comfortable hand-wiring [here](https://www.aliexpress.us/item/3256801622787441.html) |
+| Acrylic Cover ([cover.dxf](cover.dxf)) | 1 or 2 | Each uses 4x 5mm M2 screws and 2x 5mm M2 standofffs |
 
 ## Build Instructions
 These steps assume you already have an assembled PCB and are installing
 switches, RGB LEDs, displays, and/or other peripherals. If you are
-hand-assebling the PCBs with all components, the [interactive BOM](https://html-preview.github.io/?url=https://git.pngu.org/sweep/tree/ibom.html)
+hand-assebling the PCBs with all components, the [interactive BOM](https://html-preview.github.io/?url=https://github.com/waffle87/sweep/blob/master/ibom.html)
 will be helpful.
 
 1. Ensure keyboard is functional by flashing firmware if necessary
