@@ -22,14 +22,12 @@ The following instructions will be for [JLCPCB](https://jlcpcb.com), but should 
 quantity and colour as desired)
 - **Different Design**: 2
 3. For PCB assembly, choose **Economic** PCBA type and **Top Side** for assembly side. If you would like the LEDs and related components to be installed by PCBA, choose **Standard** and **Both Sides**.
-4. Upload BOM file from [production/bom.csv](production/bom.csv) on the Bill of Materials page
-5. Upload CPL file from [production/positions.csv](production/positions.csv) as well
-- Choose "File Provided as Complete File, proceed with my own files"
-6. Select appropriate components on the following screen by typing in the shown part number and select it. An effort has been made to choose as few extended components as possible, but this is not possible for some.
+4. Upload the [BOM](production/bom.csv) and [CPL](production/positions.csv) files
+5. Ensure the correct components have been selected, and all are in stock. An effort has been made to choose as few extended components as possible, but this is not possible for some.
 - Footprints D1 & D2 are power indication LEDs. They can be left unpopulated if you'd rather not have an LED that is always lit. If you would like them installed while not being blinded, try to find an LED with a lower forward current and voltage (supply is 5v), perhaps something in the realm of 2v and 1-5mA.
 - The current-smoothing capacitors (on the back side) for the RGB LEDs are not required for the LEDs to function.
-- The FPC connector is only needed if you'd like to install the ST7789 display.
-7. Give a quick look at the component placement and make sure nothing looks wildly wrong. It is normal for some components to be shown oriented incorrectly or not quite where they belong. The PCB reviewers will usually correct this without issue.
+- The FPC connector is only needed if you'd wish to install the ST7789 display(s).
+6. Give a quick look at the component placement and make sure nothing looks wildly wrong. It is normal for some components to be shown oriented incorrectly or not quite where they belong. The PCB reviewers will usually correct this without issue.
 
 ### Additional components
 For optional components to be installed by hand:

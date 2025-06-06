@@ -513,7 +513,7 @@
       "plot": "production/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "sweep.step",
       "svg": "",
       "vrml": ""
     },
