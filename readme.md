@@ -1,7 +1,6 @@
 # Sweep
 
-A [Ferris Sweep](https://github.com/davidphilipbarr/Sweep) variant
-designed with an integrated RP2040 and some other added features.
+A [Ferris Sweep](https://github.com/davidphilipbarr/Sweep) variant designed with an integrated RP2040 and some other added features.
 
 ![top](img/pcb_top.svg)
 
@@ -18,8 +17,7 @@ This PCB has the exact same dimensions and mounting points (via SplitKB Tenting 
 The following instructions will be for [JLCPCB](https://jlcpcb.com), but should generally apply to most PCB manufacturers. If you would like a plate, the one [here](https://github.com/davidphilipbarr/Sweep/blob/main/Sweep%20v2.2/sweepv2_plate.pro) can probably be used, although I have not verified this.
 
 1. Upload the Gerber files from [production/gerbers.zip](production/gerbers.zip)
-2. Set the following parameters: (and change other things like PCB
-quantity and colour as desired)
+2. Set the following parameters: (and change other things like PCB quantity and colour as desired)
 - **Different Design**: 2
 3. For PCB assembly, choose **Economic** PCBA type and **Top Side** for assembly side. If you would like the LEDs and related components to be installed by PCBA, choose **Standard** and **Both Sides**.
 4. Upload the [BOM](production/bom.csv) and [CPL](production/positions.csv) files
